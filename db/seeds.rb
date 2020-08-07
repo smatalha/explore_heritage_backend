@@ -11,7 +11,7 @@
 # require "net/http"
 
 Category.destroy_all
-# Todo.destroy_all
+Region.destroy_all
 # User.destroy_all
 
 puts "Seeded"
@@ -19,4 +19,10 @@ puts "Seeded"
 cultural = Category.create(name: 'Cultural')
 natural = Category.create(name: 'Natural')
 mixed = Category.create(name: 'Mixed')
+
+ena = Region.create(name: 'Europe and North America')
+asia = Region.create(name: 'Asia and the Pasific')
+latin = Region.create(name: 'Latin America and the Caribian')
+africa = Region.create(name: 'Africa')
+arab = Region.create(name: 'Arab States')
 
