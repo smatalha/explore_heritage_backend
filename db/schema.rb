@@ -10,12 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_07_155710) do
+ActiveRecord::Schema.define(version: 2020_08_07_203209) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "countries", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -27,10 +33,27 @@ ActiveRecord::Schema.define(version: 2020_08_07_155710) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "states", force: :cascade do |t|
+  create_table "sites", force: :cascade do |t|
     t.string "name"
+    t.string "date_inscribed"
+    t.string "justification"
+    t.string "image_url"
+    t.string "location"
+    t.string "http_url"
+    t.string "short_description"
+    t.boolean "danger"
+    t.boolean "visited"
+    t.bigint "category_id", null: false
+    t.bigint "region_id", null: false
+    t.bigint "country_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["category_id"], name: "index_sites_on_category_id"
+    t.index ["country_id"], name: "index_sites_on_country_id"
+    t.index ["region_id"], name: "index_sites_on_region_id"
   end
 
+  add_foreign_key "sites", "categories"
+  add_foreign_key "sites", "countries"
+  add_foreign_key "sites", "regions"
 end
