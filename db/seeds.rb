@@ -22,11 +22,25 @@ cultural = Category.create(name: 'Cultural')
 natural = Category.create(name: 'Natural')
 mixed = Category.create(name: 'Mixed')
 
+# categories = Category.create([
+    # {name: 'Cultural'},
+    # {name: 'Natural'},
+    # {name: 'Mixed'}
+    # ])
+
 ena = Region.create(name: 'Europe and North America')
 asia = Region.create(name: 'Asia and the Pasific')
 latin = Region.create(name: 'Latin America and the Caribian')
 africa = Region.create(name: 'Africa')
 arab = Region.create(name: 'Arab States')
+
+# regions = Region.create([
+#     {name: 'Europe and North America'},
+#     {name: 'Asia and the Pasific'},
+#     {name: 'Latin America and the Caribian'},
+#     {name: 'Africa'},
+#     {name: 'Arab States'}
+# ])
 
 usa = Country.create(name: 'USA')
 italy = Country.create(name: 'Italy')
@@ -49,6 +63,10 @@ iran = Country.create(name: 'Iran')
 lebanon = Country.create(name: 'Lebanon')
 morocco = Country.create(name: 'Morocco')
 tunisia = Country.create(name: 'Tunisia')
+
+# countries = Country.create([
+    #     {name: 'USA'},{name: 'Italy'},{name: 'Spain'},{name: 'Germany'},{name: 'Turkey'},{name: 'Canada'},{name: 'Senegal'},{name: 'South Africa'},{name: 'Ethiopia'},{name: 'Mexico'},{name: 'Brazil'},{name: 'Peru'},{name: 'Barbados'},{name: 'Austrlia'},{name: 'Bangladesh'},{name: 'Japan'},{name: 'China'},{name: 'Iran'},{name: 'Lebanon'},{name: 'Morocco'},{name: 'Tunisia'}
+# ])
 
 
 sites = Site.create([
