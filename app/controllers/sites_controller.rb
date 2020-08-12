@@ -21,7 +21,7 @@ class SitesController < ApplicationController
         params.require(:site).permit!
     end
 
-    def site
+    def find_site
         @site = Site.find(params[:id])
     end
 end

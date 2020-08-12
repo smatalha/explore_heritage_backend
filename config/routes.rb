@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :wish_lists
+  resources :comments
+  resources :users
   resources :sites
   resources :countries
   resources :regions

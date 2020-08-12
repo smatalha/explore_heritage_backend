@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_09_163645) do
+ActiveRecord::Schema.define(version: 2020_08_12_113235) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,16 @@ ActiveRecord::Schema.define(version: 2020_08_09_163645) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.string "content"
+    t.bigint "user_id", null: false
+    t.bigint "site_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["site_id"], name: "index_comments_on_site_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "countries", force: :cascade do |t|
@@ -55,7 +65,28 @@ ActiveRecord::Schema.define(version: 2020_08_09_163645) do
     t.index ["region_id"], name: "index_sites_on_region_id"
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "password_digest"
+    t.string "img_url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "wish_lists", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "site_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["site_id"], name: "index_wish_lists_on_site_id"
+    t.index ["user_id"], name: "index_wish_lists_on_user_id"
+  end
+
+  add_foreign_key "comments", "sites"
+  add_foreign_key "comments", "users"
   add_foreign_key "sites", "categories"
   add_foreign_key "sites", "countries"
   add_foreign_key "sites", "regions"
+  add_foreign_key "wish_lists", "sites"
+  add_foreign_key "wish_lists", "users"
 end
