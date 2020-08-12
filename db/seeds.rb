@@ -68,13 +68,14 @@ tunisia = Country.create(name: 'Tunisia')
     #     {name: 'USA'},{name: 'Italy'},{name: 'Spain'},{name: 'Germany'},{name: 'Turkey'},{name: 'Canada'},{name: 'Senegal'},{name: 'South Africa'},{name: 'Ethiopia'},{name: 'Mexico'},{name: 'Brazil'},{name: 'Peru'},{name: 'Barbados'},{name: 'Austrlia'},{name: 'Bangladesh'},{name: 'Japan'},{name: 'China'},{name: 'Iran'},{name: 'Lebanon'},{name: 'Morocco'},{name: 'Tunisia'}
 # ])
 
-
 sites = Site.create([
     {
         name:  'Grand Canyon National Park',
         date_inscribed: 1979,
+        latitude: 36.10083333,
+        longitude: -112.0905556,
         justification: 'Carved out by the Colorado River, the Grand Canyon (nearly 1,500 m deep) is the most spectacular gorge in the world. Located in the state of Arizona, it cuts across the Grand Canyon National Park. Its horizontal strata retrace the geological history of the past 2 billion years. There are also prehistoric traces of human adaptation to a particularly harsh environment.',
-        image_url:  'http://whc.unesco.org/uploads/thumbs/site_0075_0001-360-360-20151105155342.jpg',
+        image_url:  'http://whc.unesco.org/uploads/thumbs/site_0075_0017-360-360-20151105155353.jpg',
         location: 'Counties of Coconino and Mohave in the State of Arizona',
         http_url: 'http://whc.unesco.org/en/list/75',
         short_description: 'The Grand Canyon is among the earth’s greatest on-going geological spectacles. Its vastness is stunning, and the evidence it reveals about the earth’s history is invaluable. The 1.5-kilometer (0.9 mile) deep gorge ranges in width from 500 m to 30 km (0.3 mile to 18.6 miles). It twists and turns 445 km (276.5 miles) and was formed during 6 million years of geologic activity and erosion by the Colorado River on the upraised earth’s crust. The buttes, spires, mesas and temples in the canyon are in fact mountains looked down upon from the rims. Horizontal strata exposed in the canyon retrace geological history over 2 billion years and represent the four major geologic eras.',
@@ -83,13 +84,15 @@ sites = Site.create([
         country_id: usa.id
     },
     {
-        name:  'Independence Hall',
+        name:  'Statue of Liberty',
         date_inscribed: 1979,
-        justification: 'The Declaration of Independence (1776) and the Constitution of the United States (1787) were both signed in this building in Philadelphia. The universal principles of freedom and democracy set forth in these documents are of fundamental importance to American history and have also had a profound impact on law-makers around the world.',
-        image_url:  'http://whc.unesco.org/uploads/thumbs/site_0078_0008-360-360-20160810112659.jpg',
-        location: 'Philadelphia, Commonwealth of Pennsylvania',
-        http_url: 'http://whc.unesco.org/en/list/78',
-        short_description: 'The Declaration of Independence was adopted and the Constitution of the United States of America framed in this fine early 18th-century building in Philadelphia. These events, which took place respectively in 1776 and 1787, were conceived in a national context, but the universal principles of freedom and democracy set forth in these two documents have had a profound impact on lawmakers and political thinkers around the world. They became the models for similar charters of other nations, and may be considered to have heralded the modern era of government. Independence Hall was designed by attorney Andrew Hamilton in collaboration with master builder Edmund Woolley to house the Assembly of the Commonwealth (colony) of Pennsylvania. Begun in 1732 and finished in 1753, it is a dignified brick structure with a wooden steeple that once held the Liberty Bell. The building has undergone many restorations, notably by architect John Haviland in the 1830s and under the direction of the National Park Service beginning in the 1950s, returning it to its appearance during the years when the new country’s Declaration of Independence and Constitution were debated and signed. In the Assembly Room, the momentous events that occurred there are explained and their international impact as well as the spread of democracy are discussed.',
+        latitude: 40.68944444,
+        longitude: -74.04472222,
+        justification: 'Made in Paris by the French sculptor Bartholdi, in collaboration with Gustave Eiffel (who was responsible for the steel framework), this towering monument to liberty was a gift from France on the centenary of American independence. Inaugurated in 1886, the sculpture stands at the entrance to New York Harbour and has welcomed millions of immigrants to the United States ever since.',
+        image_url:  'http://whc.unesco.org/uploads/thumbs/site_0307_0005-360-360-20151105155451.jpg',
+        location: 'New York, New York',
+        http_url: 'http://whc.unesco.org/en/list/307',
+        short_description: 'The Statue of Liberty, a hollow colossus composed of thinly pounded copper sheets over a steel framework, stands on an island at the entrance to New York Harbor. It was designed by sculptor Frédéric Bartholdi in collaboration with engineer Gustave Eiffel, and was a gift from France on the centenary of American independence in 1876. Its design and construction were recognized at the time as one of the greatest technical achievements of the 19th century and hailed as a bridge between art and engineering. Atop its pedestal (designed by American architect Richard Morris Hunt), the Statue has welcomed millions of immigrants to the United States since it was dedicated in 1886.The Statue is a masterpiece of colossal statuary, which found renewed expression in the 19th century, after the tradition of those of antiquity, but with intimations of Art Nouveau. Drawing on classical elements and iconography, it expressed modern aspirations. The interior iron framework is a formidable and intricate piece of construction, a harbinger of the future in engineering, architecture, and art, including the extensive use of concrete in the base, the flexible curtain-wall type of construction that supports the skin, and the use of electricity to light the torch. Édouard René de Laboulaye collaborated with Bartholdi for the concept of the Statue to embody international friendship, peace, and progress, and specifically the historical alliance between France and the United States. Its financing by international subscription was also significant. Highly potent symbolic elements of the design include the United States Declaration of Independence, which the Statue holds in her left hand, as well as the broken shackles from which she steps. ',
         category_id: cultural.id,
         region_id: ena.id,
         country_id: usa.id
@@ -97,8 +100,10 @@ sites = Site.create([
     {
         name:  'Historic Centre of Florence',
         date_inscribed: 1982,
+        latitude: 43.77306,
+        longitude: 11.25611,
         justification: 'Built on the site of an Etruscan settlement, Florence, the symbol of the Renaissance, rose to economic and cultural pre-eminence under the Medici in the 15th and 16th centuries. Its 600 years of extraordinary artistic activity can be seen above all in the 13th-century cathedral (Santa Maria del Fiore), the Church of Santa Croce, the Uffizi and the Pitti Palace, the work of great masters such as Giotto, Brunelleschi, Botticelli and Michelangelo.',
-        image_url:  'https://italyxp.com/sites/default/files/styles/xpbsf_hp_home_slider/public/mediaitalyxp/dollarphotoclub_70355385.jpg',
+        image_url:  'http://whc.unesco.org/uploads/thumbs/site_0174_0010-360-360-20101230112109.jpg',
         location: 'City and Province of Florence, Tuscany',
         http_url: 'http://whc.unesco.org/en/list/174/',
         short_description: 'Florence was built on the site of an Etruscan settlement and the later ancient Roman colony of Florentia (founded in 59 BC). This Tuscan city became a symbol of the Renaissance during the early Medici period (between the 15th and the 16th centuries), reaching extraordinary levels of economic and cultural development. The present historic centre covers 505 ha and is bounded by the remains of the city’s 14th-century walls. These walls are represented by surviving gates, towers, and the two Medici strongholds: that of Saint John the Baptist in the north, popularly known as “da Basso”, and the Fort of San Giorgio del Belvedere located amongst the hills of the south side. The Arno River runs east and west through the city and a series of bridges connects its two banks including Ponte Vecchio and Ponte Santa Trinita.',
@@ -109,6 +114,8 @@ sites = Site.create([
     {
         name:  'Venice and its Lagoon',
         date_inscribed: 1987,
+        latitude: 45.43430556,
+        longitude: 12.33894444,
         justification: "Founded in the 5th century and spread over 118 small islands, Venice became a major maritime power in the 10th century. The whole city is an extraordinary architectural masterpiece in which even the smallest building contains works by some of the world's greatest artists such as Giorgione, Titian, Tintoretto, Veronese and others.",
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0394_0042-360-360-20151105113125.jpg',
         location: 'Province of Venezia, Veneto Region',
@@ -121,6 +128,8 @@ sites = Site.create([
     {
         name:  'The Great Wall',
         date_inscribed: 1987,
+        latitude: 40.41667,
+        longitude: 116.08333,
         justification: "In c. 220 B.C., under Qin Shi Huang, sections of earlier fortifications were joined together to form a united defence system against invasions from the north. Construction continued up to the Ming dynasty (1368–1644), when the Great Wall became the world's largest military structure. Its historic and strategic importance is matched only by its architectural significance.",
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0438_0017-360-360-20151104150232.jpg',
         location: 'Liaoning, Jilin, Hebei, Beijing, Tianjin, Shanxi, Inner Mongolia, Shaanxi, Ningxia, Gansu, Xinjiang, Shandong, Henan, Hubei, Hunan, Sichuan, Qinghai provinces, municipalities and autonomous Regions',
@@ -133,6 +142,8 @@ sites = Site.create([
     {
         name:  'Mount Wuyi',
         date_inscribed: 1999,
+        latitude: 27.71667,
+        longitude: 117.68333,
         justification: "Mount Wuyi is the most outstanding area for biodiversity conservation in south-east China and a refuge for a large number of ancient, relict species, many of them endemic to China. The serene beauty of the dramatic gorges of the Nine Bend River, with its numerous temples and monasteries, many now in ruins, provided the setting for the development and spread of neo-Confucianism, which has been influential in the cultures of East Asia since the 11th century. In the 1st century B.C. a large administrative capital was built at nearby Chengcun by the Han dynasty rulers. Its massive walls enclose an archaeological site of great significance.",
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0911_0009-360-360-20131205150255.jpg',
         location: 'Wuyishan City, Fujian Province',
@@ -145,6 +156,8 @@ sites = Site.create([
     {
         name:  "Meidan Emam, Esfahan",
         date_inscribed: 1979,
+        latitude: 51.6777777777,
+        longitude: 32.65745,
         justification: 'Built by Shah Abbas I the Great at the beginning of the 17th century, and bordered on all sides by monumental buildings linked by a series of two-storeyed arcades, the site is known for the Royal Mosque, the Mosque of Sheykh Lotfollah, the magnificent Portico of Qaysariyyeh and the 15th-century Timurid palace. They are an impressive testimony to the level of social and cultural life in Persia during the Safavid era.',
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0115_0015-360-360-20151105103954.jpg',
         location: 'Esfahan',
@@ -157,6 +170,8 @@ sites = Site.create([
     {
         name:  'Shirakami-Sanchi',
         date_inscribed: 1993,
+        latitude: 140.115555556,
+        longitude: 40.4525,
         justification: "Situated in the mountains of northern Honshu, this trackless site includes the last virgin remains of the cool-temperate forest of Siebold's beech trees that once covered the hills and mountain slopes of northern Japan. The black bear, the serow and 87 species of birds can be found in this forest.",
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0663_0002-360-360-20151105113918.jpg',
         location: 'Ajigasawa-machi, Nishitsugaru-gun, Aomori Prefecture; Fukaura-machi, Nishitsugaru-gun, Aomori Prefecture; Iwasaki-mura, Nishitsugaru-gun, Aomori Prefecture; Fujisato-machi, Yamamoto-gun, Akita Prefecture',
@@ -169,8 +184,10 @@ sites = Site.create([
     {
         name:  'Ouadi Qadisha (the Holy Valley) and the Forest of the Cedars of God (Horsh Arz el-Rab)',
         date_inscribed: 1998,
+        latitude: 34.24333,
+        longitude: 36.04889,
         justification: "The Qadisha valley is one of the most important early Christian monastic settlements in the world. Its monasteries, many of which are of a great age, stand in dramatic positions in a rugged landscape. Nearby are the remains of the great forest of cedars of Lebanon, highly prized in antiquity for the construction of great religious buildings.",
-        image_url:  'http://whc.unesco.org/uploads/thumbs/site_0850_0003-750-0-20151104123505.jpg',
+        image_url:  'http://whc.unesco.org/uploads/thumbs/site_0850_0021-360-360-20151104123519.jpg',
         location: 'Qadisha Valley, Becharre District, Governorate of North Lebanon',
         http_url: 'http://whc.unesco.org/en/list/850',
         short_description: "Ouadi Qadisha is one of the most important settlement sites of the first Christian monasteries in the world, and its monasteries, many of which of great age, are set in an extraordinarily rugged landscape. Nearby are the vestiges of the great cedar forest of Lebanon, highly prized in ancient times for the construction of great religious buildings.The Qadisha Valley site and the Forest of the Cedars of God (Horsh Arz el-Rab) are located in northern Lebanon. The Qadisha Valley is located North of Mount-Lebanon chain, at the foot of Mount al-Makmel and West of the Forest of the Cedars of God. The Holy River Qadisha, celebrated in the Scriptures, runs through the Valley. The Forest of the Cedars of God is located on Mount Makmel, between 1900 and 2050 m altitude and to the East of the village of Bcharré.",
@@ -181,8 +198,10 @@ sites = Site.create([
     {
         name:  'Tehuacán-Cuicatlán Valley: originary habitat of Mesoamerica',
         date_inscribed: 2018,
+        latitude: 17.9899611111,
+        longitude: -97.1871527778,
         justification: "Tehuacán-Cuicatlán Valley, part of the Mesoamerican region, is the arid or semi-arid zone with the richest biodiversity in all of North America. Consisting of three components, Zapotitlán-Cuicatlán, San Juan Raya and Purrón, it is one of the main centres of diversification for the cacti family, which is critically endangered worldwide. The valley harbours the densest forests of columnar cacti in the world, shaping a unique landscape that also includes agaves, yuccas and oaks. Archaeological remains demonstrate technological developments and the early domestication of crops. The valley presents an exceptional water management system of canals, wells, aqueducts and dams, the oldest in the continent, which has allowed for the emergence of agricultural settlements.",
-        image_url:  'http://whc.unesco.org/uploads/thumbs/site_1534_0032-750-0-20180222103111.jpg',
+        image_url:  'http://whc.unesco.org/uploads/thumbs/site_1534_0014-360-360-20170607174402.jpg',
         location: 'N17 59 23.86 W97 11 13.75',
         http_url: 'http://whc.unesco.org/en/list/1534',
         short_description: "The Tehuacán-Cuicatlán: originary habitat of Mesoamerica is located in central-southern Mexico, at the southeast of the State of Puebla and north of the State of Oaxaca. The property is a serial site of some 145,255 ha composed of three components: Zapotitlán-Cuicatlán, San Juan Raya and Purrón. All these share the same buffer zone of some 344,932 ha. The entire property is located within the Tehuacán-Cuicatlán Biosphere Reserve. The property coincides with a global biodiversity hotspot and lies within an arid or semiarid zone with one of the highest levels of biological diversity in North America, giving rise to human adaptations crucial to the emergence of Mesoamerica, one of the cradles of civilisation in the world.",
@@ -193,6 +212,8 @@ sites = Site.create([
     {
         name:  'Medina of Marrakesh',
         date_inscribed: 1985,
+        latitude: 131.63139,
+        longitude: -7.98667,
         justification: "Founded in 1070–72 by the Almoravids, Marrakesh remained a political, economic and cultural centre for a long period. Its influence was felt throughout the western Muslim world, from North Africa to Andalusia. It has several impressive monuments dating from that period: the Koutoubiya Mosque, the Kasbah, the battlements, monumental doors, gardens, etc. Later architectural jewels include the Bandiâ Palace, the Ben Youssef Madrasa, the Saadian Tombs, several great residences and Place Jamaâ El Fna, a veritable open-air theatre.",
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0331_0005-360-360-20090610110103.jpg',
         location: 'Province of Marrakesh',
@@ -205,6 +226,8 @@ sites = Site.create([
     {
         name:  'Historic Sanctuary of Machu Picchu',
         date_inscribed: 1983,
+        latitude: -13.11666667,
+        longitude: -72.58333333,
         justification: "Machu Picchu stands 2,430 m above sea-level, in the middle of a tropical mountain forest, in an extraordinarily beautiful setting. It was probably the most amazing urban creation of the Inca Empire at its height; its giant walls, terraces and ramps seem as if they have been cut naturally in the continuous rock escarpments. The natural setting, on the eastern slopes of the Andes, encompasses the upper Amazon basin with its rich diversity of flora and fauna.",
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0274_0001-360-360-20151105151608.jpg',
         location: 'Peru',
@@ -217,6 +240,8 @@ sites = Site.create([
     {
         name:  'Niokolo-Koba National Park',
         date_inscribed: 1981,
+        latitude: 13.06667,
+        longitude: -12.71667,
         justification: "Located in a well-watered area along the banks of the Gambia river, the gallery forests and savannahs of Niokolo-Koba National Park have a very rich fauna, among them Derby elands (largest of the antelopes), chimpanzees, lions, leopards and a large population of elephants, as well as many birds, reptiles and amphibians.",
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0153_0031-360-360-20151105161747.jpg',
         location: 'Eastern Senegal and Upper Casamance regions',
@@ -229,6 +254,8 @@ sites = Site.create([
     {
         name:  'Cape Floral Region Protected Areas',
         date_inscribed: 2004,
+        latitude: -34.3611111111,
+        longitude: 18.475,
         justification: "Inscribed on the World Heritage List in 2004, the property is located at the south-western extremity of South Africa. It is one of the world’s great centres of terrestrial biodiversity. The extended property includes national parks, nature reserves, wilderness areas, State forests and mountain catchment areas. These elements add a significant number of endemic species associated with the Fynbos vegetation, a fine-leaved sclerophyllic shrubland adapted to both a Mediterranean climate and periodic fires, which is unique to the Cape Floral Region.",
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_1007_0007-360-360-20151105153756.jpg',
         location: 'S34 21 40 E18 28 30',
@@ -241,6 +268,8 @@ sites = Site.create([
     {
         name:  'Tower of Hercules',
         date_inscribed: 2009,
+        latitude: 43.3858333333,
+        longitude: -8.4063888889,
         justification: "The Tower of Hercules has served as a lighthouse and landmark at the entrance of La Coruña harbour in north-western Spain since the late 1st century A.D. when the Romans built the Farum Brigantium. The Tower, built on a 57 metre high rock, rises a further 55 metres, of which 34 metres correspond to the Roman masonry and 21 meters to the restoration directed by architect Eustaquio Giannini in the 18th century, who augmented the Roman core with two octagonal forms. Immediately adjacent to the base of the Tower, is a small rectangular Roman building. The site also features a sculpture park, the Monte dos Bicos rock carvings from the Iron Age and a Muslim cemetery. The Roman foundations of the building were revealed in excavations conducted in the 1990s. Many legends from the Middle Ages to the 19th century surround the Tower of Hercules, which is unique as it is the only lighthouse of Greco-Roman antiquity to have retained a measure of structural integrity and functional continuity.",
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_1312_0002-360-360-20151105160941.jpg',
         location: 'N43 23 9 W8 24 23',
@@ -253,6 +282,8 @@ sites = Site.create([
     {
         name:  'Medina of Tunis',
         date_inscribed: 1979,
+        latitude: 36.81667,
+        longitude: 10.16667,
         justification: "Under the Almohads and the Hafsids, from the 12th to the 16th century, Tunis was considered one of the greatest and wealthiest cities in the Islamic world. Some 700 monuments, including palaces, mosques, mausoleums, madrasas and fountains, testify to this remarkable past.",
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0036_0025-360-360-20151009151632.jpg',
         location: 'Tunis',
@@ -265,6 +296,8 @@ sites = Site.create([
     {
         name:  'Great Mosque and Hospital of Divriği',
         date_inscribed: 1985,
+        latitude: 39.371271,
+        longitude: 38.121826,
         justification: "This region of Anatolia was conquered by the Turks at the beginning of the 11th century. In 1228–29 Emir Ahmet Shah founded a mosque, with its adjoining hospital, at Divrigi. The mosque has a single prayer room and is crowned by two cupolas. The highly sophisticated technique of vault construction, and a creative, exuberant type of decorative sculpture – particularly on the three doorways, in contrast to the unadorned walls of the interior – are the unique features of this masterpiece of Islamic architecture.",
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0358_0002-360-360-20151105163414.jpg',
         location: 'City and District of Divriği, Province of Sivas (Eastern Anatolia)',
@@ -277,6 +310,8 @@ sites = Site.create([
     {
         name:  'Aachen Cathedral',
         date_inscribed: 1978,
+        latitude: 50.77444444,
+        longitude: 6.084444444,
         justification: 'Construction of this palatine chapel, with its octagonal basilica and cupola, began c. 790–800 under the Emperor Charlemagne. Originally inspired by the churches of the Eastern part of the Holy Roman Empire, it was splendidly enlarged in the Middle Ages.',
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0003_0019-360-360-20151104122121.jpg',
         location: 'State of North Rhine-Westphalia (Nordrhein-Westfalen)',
@@ -290,6 +325,8 @@ sites = Site.create([
     {
         name:  'Simien National Park',
         date_inscribed: 1978,
+        latitude: 13.1833333333,
+        longitude: 38.0666666667,
         justification: 'Massive erosion over the years on the Ethiopian plateau has created one of the most spectacular landscapes in the world, with jagged mountain peaks, deep valleys and sharp precipices dropping some 1,500 m. The park is home to some extremely rare animals such as the Gelada baboon, the Simien fox and the Walia ibex, a goat found nowhere else in the world.',
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0009_0005-360-360-20151104173701.jpg',
         location: 'Gondar Region',
@@ -302,6 +339,8 @@ sites = Site.create([
     {
         name:  'SGang Gwaay',
         date_inscribed: 1981,
+        latitude: 52.095,
+        longitude: -131.2202778,
         justification: "The village of Ninstints (Nans Dins) is located on a small island off the west coast of the Queen Charlotte Islands (Haida Gwaii). Remains of houses, together with carved mortuary and memorial poles, illustrate the Haida people's art and way of life. The site commemorates the living culture of the Haida people and their relationship to the land and sea, and offers a visual key to their oral traditions.",
         image_url: 'http://whc.unesco.org/uploads/thumbs/site_0157_0001-360-360-20090924182044.jpg',
         location: 'Province of British Columbia',
@@ -314,6 +353,8 @@ sites = Site.create([
     {
         name: 'Iguaçu National Park',
         date_inscribed: 1986,
+        latitude: -25.68333,
+        longitude: -54.43333,
         justification: 'The park shares with Iguazú National Park in Argentina one of the world’s largest and most impressive waterfalls, extending over some 2,700 m. It is home to many rare and endangered species of flora and fauna, among them the giant otter and the giant anteater. The clouds of spray produced by the waterfall are conducive to the growth of lush vegetation.',
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0355_0003-360-360-20151104162419.jpg',
         location: 'Paraná State',
@@ -326,6 +367,8 @@ sites = Site.create([
     {
         name:  'Historic Bridgetown and its Garrison',
         date_inscribed: 2011,
+        latitude: 13.0966666667,
+        longitude: -59.6138888889,
         justification: "Historic Bridgetown and its Garrison, an outstanding example of British colonial architecture consisting of a well-preserved old town built in the 17th, 18th and 19th centuries, which testifies to the spread of Great Britain's Atlantic colonial empire. The property also includes a nearby military garrison which consists of numerous historic buildings. With its serpentine urban lay-out the property testifies to a different approach to colonial town-planning compared to the Spanish and Dutch colonial cities of the region which were built along a grid plan.",
         image_url: 'http://whc.unesco.org/uploads/thumbs/site_1376_0010-360-360-20151104154813.jpg' ,
         location: 'N13 5 48 W59 36 50',
@@ -338,6 +381,8 @@ sites = Site.create([
     {
         name:  'The Sundarbans',
         date_inscribed: 1997,
+        latitude: 21.95,
+        longitude: 89.18333,
         justification: 'The Sundarbans mangrove forest, one of the largest such forests in the world (140,000 ha), lies on the delta of the Ganges, Brahmaputra and Meghna rivers on the Bay of Bengal. It is adjacent to the border of India’s Sundarbans World Heritage site inscribed in 1987. The site is intersected by a complex network of tidal waterways, mudflats and small islands of salt-tolerant mangrove forests, and presents an excellent example of ongoing ecological processes. The area is known for its wide range of fauna, including 260 bird species, the Bengal tiger and other threatened species such as the estuarine crocodile and the Indian python.',
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0798_0006-360-360-20120827171714.jpg',
         location: 'South-Western Region (Khulna Division)',
@@ -350,6 +395,8 @@ sites = Site.create([
     {
         name:  'Great Barrier Reef',
         date_inscribed: 1981,
+        latitude: -18.28611111,
+        longitude:12,
         justification: "The Great Barrier Reef is a site of remarkable variety and beauty on the north-east coast of Australia. It contains the world’s largest collection of coral reefs, with 400 types of coral, 1,500 species of fish and 4,000 types of mollusc. It also holds great scientific interest as the habitat of species such as the dugong (‘sea cow’) and the large green turtle, which are threatened with extinction.",
         image_url: 'http://whc.unesco.org/uploads/thumbs/site_0154_0006-360-360-20151104132156.jpg',
         location: 'Off the east coast of the Queensland mainland',
