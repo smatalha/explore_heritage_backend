@@ -74,7 +74,7 @@ users = User.create ([
     {
         name: 'Talha',
         password_digest: '123456',
-        img_url: 'https://media-exp1.licdn.com/dms/image/C5603AQF_9NG68sosag/profile-displayphoto-shrink_400_400/0?e=1602720000&v=beta&t=TbozQFyWwjpFs6VywvTRWrGhoAiekSVf7YmZNFGOkUI',
+        img_url: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
         bio: "I am ultimate traveler. I wanna explore The World as much as I can before die",
         email: '123talha@gmail.com'
     }
