@@ -5,7 +5,7 @@ class User < ApplicationRecord
     has_many  :sites, through: :wish_lists
 
     validates :name, uniqueness: true
-    # validates :email, uniqueness: true
+    validates :email, uniqueness: true
 
     has_secure_password
 end

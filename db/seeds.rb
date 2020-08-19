@@ -90,7 +90,7 @@ sites = Site.create([
         image_url:  'http://whc.unesco.org/uploads/thumbs/site_0075_0017-360-360-20151105155353.jpg',
         location: 'Counties of Coconino and Mohave in the State of Arizona',
         http_url: 'http://whc.unesco.org/en/list/75',
-        short_description: 'The Grand Canyon is among the earth’s greatest on-going geological spectacles. Its vastness is stunning, and the evidence it reveals about the earth’s history is invaluable. The 1.5-kilometer (0.9 mile) deep gorge ranges in width from 500 m to 30 km (0.3 mile to 18.6 miles). It twists and turns 445 km (276.5 miles) and was formed during 6 million years of geologic activity and erosion by the Colorado River on the upraised earth’s crust. The buttes, spires, mesas and temples in the canyon are in fact mountains looked down upon from the rims. Horizontal strata exposed in the canyon retrace geological history over 2 billion years and represent the four major geologic eras.',
+        short_description: "The Grand Canyon is among the earth’s greatest on-going geological spectacles. Its vastness is stunning, and the evidence it reveals about the earth’s history is invaluable. The 1.5-kilometer (0.9 mile) deep gorge ranges in width from 500 m to 30 km (0.3 mile to 18.6 miles). It twists and turns 445 km (276.5 miles) and was formed during 6 million years of geologic activity and erosion by the Colorado River on the upraised earth’s crust. The buttes, spires, mesas and temples in the canyon are in fact mountains looked down upon from the rims. Horizontal strata exposed in the canyon retrace geological history over 2 billion years and represent the four major geologic eras.",
         category_id: natural.id,
         region_id: ena.id,
         country_id: usa.id
