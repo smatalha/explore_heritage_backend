@@ -72,11 +72,11 @@ tunisia = Country.create(name: 'Tunisia')
 # ])
 users = User.create ([
     {
-        name: 'Mohamed',
-        password: '123456',
-        img_url: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+        name: 'Muhammad',
+        password: '123',
+        img_url: 'https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/14264016_10209090511532987_6663543664750986077_n.jpg?_nc_cat=100&_nc_sid=a4a2d7&_nc_ohc=rD4YVPC6emMAX-iY3lO&_nc_ht=scontent-lga3-1.xx&oh=ed4f7aa9733bdccf4ecf101c501a8b79&oe=5F65D44B',
         bio: " My name is Abu Talha, but you can call me Talha. I'm from Bangladesh. I moved to New York because Bangladesh was too hot!Although I have lived in Bangladesh most of my life, I have spent a good amount of time traveling and living in a variety of places across the United States. Moving around a lot inspired me to continue to travel and explore the world around me. I love meeting new people and learning about the places they come from. I believe traveling is the best way to make new friends. I am super excited to embark on a new journey to Argentina and share it with all of you!I hope that we can learn together during these next few months and that we can gain an understanding of how people in a completely different part of the world live and function.",
-        email: '123talha@gmail.com'
+        email: 'muhammad@gmail.com'
     }
 
 ])

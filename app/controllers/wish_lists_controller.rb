@@ -15,6 +15,7 @@ class WishListsController < ApplicationController
         @wish_list = Wish_list.create(wish_list_params)
         render json: @wish_list
     end
+    
     def new
         @wish_list = Wish_list.new
         render json: @wish_list
