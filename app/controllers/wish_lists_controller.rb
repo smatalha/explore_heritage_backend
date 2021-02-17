@@ -12,12 +12,12 @@ class WishListsController < ApplicationController
     end
 
     def create
-        @wish_list = Wish_list.create(wish_list_params)
+        @wish_list = WishList.create(wish_list_params)
         render json: @wish_list
     end
     
     def new
-        @wish_list = Wish_list.new
+        @wish_list = WishList.new
         render json: @wish_list
     end
         private
@@ -27,6 +27,6 @@ class WishListsController < ApplicationController
     end
 
     def find_wish_list
-        @wish_list = Wish_list.find(params[:id])
+        @wish_list = WishList.find(params[:id])
     end
 end
